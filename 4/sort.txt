@@ -1,0 +1,760 @@
+minute:12 709 sleeps
+minute:53 709 wakes. he slept a total of 41 minutes
+minute:01 709 sleeps
+minute:09 709 wakes. he slept a total of 49 minutes
+minute:35 709 sleeps
+minute:43 709 wakes. he slept a total of 57 minutes
+minute:28 709 sleeps
+minute:49 709 wakes. he slept a total of 78 minutes
+minute:57 709 sleeps
+minute:58 709 wakes. he slept a total of 79 minutes
+minute:44 2083 sleeps
+minute:56 2083 wakes. he slept a total of 12 minutes
+minute:25 1907 sleeps
+minute:40 1907 wakes. he slept a total of 15 minutes
+minute:35 3319 sleeps
+minute:40 3319 wakes. he slept a total of 5 minutes
+minute:46 3319 sleeps
+minute:47 3319 wakes. he slept a total of 6 minutes
+minute:54 3319 sleeps
+minute:57 3319 wakes. he slept a total of 9 minutes
+minute:04 2887 sleeps
+minute:27 2887 wakes. he slept a total of 23 minutes
+minute:47 2887 sleeps
+minute:50 2887 wakes. he slept a total of 26 minutes
+minute:03 2887 sleeps
+minute:17 2887 wakes. he slept a total of 40 minutes
+minute:16 1801 sleeps
+minute:26 1801 wakes. he slept a total of 10 minutes
+minute:24 73 sleeps
+minute:41 73 wakes. he slept a total of 17 minutes
+minute:02 593 sleeps
+minute:31 593 wakes. he slept a total of 29 minutes
+minute:40 593 sleeps
+minute:42 593 wakes. he slept a total of 31 minutes
+minute:10 1907 sleeps
+minute:50 1907 wakes. he slept a total of 55 minutes
+minute:24 1801 sleeps
+minute:43 1801 wakes. he slept a total of 29 minutes
+minute:52 1801 sleeps
+minute:56 1801 wakes. he slept a total of 33 minutes
+minute:21 503 sleeps
+minute:31 503 wakes. he slept a total of 10 minutes
+minute:19 503 sleeps
+minute:31 503 wakes. he slept a total of 22 minutes
+minute:37 503 sleeps
+minute:43 503 wakes. he slept a total of 28 minutes
+minute:50 503 sleeps
+minute:52 503 wakes. he slept a total of 30 minutes
+minute:39 2963 sleeps
+minute:41 2963 wakes. he slept a total of 2 minutes
+minute:05 2963 sleeps
+minute:09 2963 wakes. he slept a total of 6 minutes
+minute:30 2963 sleeps
+minute:55 2963 wakes. he slept a total of 31 minutes
+minute:08 3361 sleeps
+minute:18 3361 wakes. he slept a total of 10 minutes
+minute:28 3361 sleeps
+minute:37 3361 wakes. he slept a total of 19 minutes
+minute:31 2917 sleeps
+minute:36 2917 wakes. he slept a total of 5 minutes
+minute:51 2917 sleeps
+minute:55 2917 wakes. he slept a total of 9 minutes
+minute:50 709 sleeps
+minute:51 709 wakes. he slept a total of 80 minutes
+minute:15 2843 sleeps
+minute:44 2843 wakes. he slept a total of 29 minutes
+minute:10 853 sleeps
+minute:23 853 wakes. he slept a total of 13 minutes
+minute:41 853 sleeps
+minute:51 853 wakes. he slept a total of 23 minutes
+minute:54 853 sleeps
+minute:57 853 wakes. he slept a total of 26 minutes
+minute:10 853 sleeps
+minute:41 853 wakes. he slept a total of 57 minutes
+minute:15 103 sleeps
+minute:27 103 wakes. he slept a total of 12 minutes
+minute:48 103 sleeps
+minute:52 103 wakes. he slept a total of 16 minutes
+minute:36 3319 sleeps
+minute:43 3319 wakes. he slept a total of 16 minutes
+minute:46 3319 sleeps
+minute:58 3319 wakes. he slept a total of 28 minutes
+minute:00 3319 sleeps
+minute:54 3319 wakes. he slept a total of 82 minutes
+minute:17 503 sleeps
+minute:30 503 wakes. he slept a total of 43 minutes
+minute:34 503 sleeps
+minute:38 503 wakes. he slept a total of 47 minutes
+minute:47 503 sleeps
+minute:55 503 wakes. he slept a total of 55 minutes
+minute:12 919 sleeps
+minute:49 919 wakes. he slept a total of 37 minutes
+minute:34 919 sleeps
+minute:55 919 wakes. he slept a total of 58 minutes
+minute:09 853 sleeps
+minute:11 853 wakes. he slept a total of 59 minutes
+minute:37 853 sleeps
+minute:44 853 wakes. he slept a total of 66 minutes
+minute:30 2917 sleeps
+minute:52 2917 wakes. he slept a total of 31 minutes
+minute:34 2917 sleeps
+minute:39 2917 wakes. he slept a total of 36 minutes
+minute:45 2917 sleeps
+minute:56 2917 wakes. he slept a total of 47 minutes
+minute:08 853 sleeps
+minute:48 853 wakes. he slept a total of 106 minutes
+minute:16 853 sleeps
+minute:53 853 wakes. he slept a total of 143 minutes
+minute:27 1907 sleeps
+minute:39 1907 wakes. he slept a total of 67 minutes
+minute:43 1907 sleeps
+minute:48 1907 wakes. he slept a total of 72 minutes
+minute:15 151 sleeps
+minute:32 151 wakes. he slept a total of 17 minutes
+minute:43 151 sleeps
+minute:44 151 wakes. he slept a total of 18 minutes
+minute:11 2843 sleeps
+minute:37 2843 wakes. he slept a total of 55 minutes
+minute:06 2843 sleeps
+minute:09 2843 wakes. he slept a total of 58 minutes
+minute:47 2843 sleeps
+minute:55 2843 wakes. he slept a total of 66 minutes
+minute:28 2663 sleeps
+minute:53 2663 wakes. he slept a total of 25 minutes
+minute:13 2917 sleeps
+minute:43 2917 wakes. he slept a total of 77 minutes
+minute:26 2917 sleeps
+minute:52 2917 wakes. he slept a total of 103 minutes
+minute:20 2887 sleeps
+minute:23 2887 wakes. he slept a total of 43 minutes
+minute:32 2887 sleeps
+minute:35 2887 wakes. he slept a total of 46 minutes
+minute:42 2887 sleeps
+minute:44 2887 wakes. he slept a total of 48 minutes
+minute:47 2887 sleeps
+minute:48 2887 wakes. he slept a total of 49 minutes
+minute:43 709 sleeps
+minute:54 709 wakes. he slept a total of 91 minutes
+minute:02 709 sleeps
+minute:09 709 wakes. he slept a total of 98 minutes
+minute:14 709 sleeps
+minute:52 709 wakes. he slept a total of 136 minutes
+minute:14 2963 sleeps
+minute:53 2963 wakes. he slept a total of 70 minutes
+minute:47 3361 sleeps
+minute:53 3361 wakes. he slept a total of 25 minutes
+minute:39 3361 sleeps
+minute:42 3361 wakes. he slept a total of 28 minutes
+minute:57 3361 sleeps
+minute:59 3361 wakes. he slept a total of 30 minutes
+minute:29 73 sleeps
+minute:39 73 wakes. he slept a total of 27 minutes
+minute:46 73 sleeps
+minute:56 73 wakes. he slept a total of 37 minutes
+minute:07 2083 sleeps
+minute:56 2083 wakes. he slept a total of 61 minutes
+minute:07 1801 sleeps
+minute:16 1801 wakes. he slept a total of 42 minutes
+minute:45 1801 sleeps
+minute:51 1801 wakes. he slept a total of 48 minutes
+minute:19 2917 sleeps
+minute:34 2917 wakes. he slept a total of 118 minutes
+minute:43 2917 sleeps
+minute:48 2917 wakes. he slept a total of 123 minutes
+minute:33 2917 sleeps
+minute:38 2917 wakes. he slept a total of 128 minutes
+minute:45 2917 sleeps
+minute:48 2917 wakes. he slept a total of 131 minutes
+minute:57 2917 sleeps
+minute:58 2917 wakes. he slept a total of 132 minutes
+minute:21 2887 sleeps
+minute:38 2887 wakes. he slept a total of 66 minutes
+minute:23 2887 sleeps
+minute:44 2887 wakes. he slept a total of 87 minutes
+minute:56 2887 sleeps
+minute:59 2887 wakes. he slept a total of 90 minutes
+minute:19 2083 sleeps
+minute:25 2083 wakes. he slept a total of 67 minutes
+minute:51 2083 sleeps
+minute:58 2083 wakes. he slept a total of 74 minutes
+minute:37 151 sleeps
+minute:40 151 wakes. he slept a total of 21 minutes
+minute:48 151 sleeps
+minute:58 151 wakes. he slept a total of 31 minutes
+minute:10 151 sleeps
+minute:36 151 wakes. he slept a total of 57 minutes
+minute:44 151 sleeps
+minute:59 151 wakes. he slept a total of 72 minutes
+minute:40 2843 sleeps
+minute:47 2843 wakes. he slept a total of 73 minutes
+minute:45 853 sleeps
+minute:49 853 wakes. he slept a total of 147 minutes
+minute:22 853 sleeps
+minute:48 853 wakes. he slept a total of 173 minutes
+minute:07 2663 sleeps
+minute:48 2663 wakes. he slept a total of 66 minutes
+minute:11 103 sleeps
+minute:43 103 wakes. he slept a total of 48 minutes
+minute:51 103 sleeps
+minute:52 103 wakes. he slept a total of 49 minutes
+minute:29 103 sleeps
+minute:41 103 wakes. he slept a total of 61 minutes
+minute:45 103 sleeps
+minute:57 103 wakes. he slept a total of 73 minutes
+minute:26 2963 sleeps
+minute:27 2963 wakes. he slept a total of 71 minutes
+minute:45 2963 sleeps
+minute:50 2963 wakes. he slept a total of 76 minutes
+minute:09 2917 sleeps
+minute:11 2917 wakes. he slept a total of 134 minutes
+minute:27 2917 sleeps
+minute:43 2917 wakes. he slept a total of 150 minutes
+minute:53 2917 sleeps
+minute:59 2917 wakes. he slept a total of 156 minutes
+minute:11 2917 sleeps
+minute:58 2917 wakes. he slept a total of 203 minutes
+minute:32 2917 sleeps
+minute:37 2917 wakes. he slept a total of 208 minutes
+minute:54 2917 sleeps
+minute:55 2917 wakes. he slept a total of 209 minutes
+minute:14 2917 sleeps
+minute:53 2917 wakes. he slept a total of 248 minutes
+minute:35 919 sleeps
+minute:50 919 wakes. he slept a total of 73 minutes
+minute:54 919 sleeps
+minute:58 919 wakes. he slept a total of 77 minutes
+minute:20 919 sleeps
+minute:34 919 wakes. he slept a total of 91 minutes
+minute:11 1093 sleeps
+minute:42 1093 wakes. he slept a total of 31 minutes
+minute:53 1093 sleeps
+minute:59 1093 wakes. he slept a total of 37 minutes
+minute:35 1741 sleeps
+minute:54 1741 wakes. he slept a total of 19 minutes
+minute:04 1741 sleeps
+minute:56 1741 wakes. he slept a total of 71 minutes
+minute:26 2963 sleeps
+minute:33 2963 wakes. he slept a total of 83 minutes
+minute:36 2963 sleeps
+minute:56 2963 wakes. he slept a total of 103 minutes
+minute:20 1741 sleeps
+minute:29 1741 wakes. he slept a total of 80 minutes
+minute:37 1741 sleeps
+minute:41 1741 wakes. he slept a total of 84 minutes
+minute:42 1741 sleeps
+minute:59 1741 wakes. he slept a total of 101 minutes
+minute:14 1093 sleeps
+minute:36 1093 wakes. he slept a total of 59 minutes
+minute:47 1093 sleeps
+minute:56 1093 wakes. he slept a total of 68 minutes
+minute:01 2887 sleeps
+minute:39 2887 wakes. he slept a total of 128 minutes
+minute:44 2887 sleeps
+minute:57 2887 wakes. he slept a total of 141 minutes
+minute:01 103 sleeps
+minute:42 103 wakes. he slept a total of 114 minutes
+minute:31 2663 sleeps
+minute:49 2663 wakes. he slept a total of 84 minutes
+minute:57 2663 sleeps
+minute:58 2663 wakes. he slept a total of 85 minutes
+minute:00 2963 sleeps
+minute:04 2963 wakes. he slept a total of 107 minutes
+minute:11 2963 sleeps
+minute:29 2963 wakes. he slept a total of 125 minutes
+minute:38 2963 sleeps
+minute:42 2963 wakes. he slept a total of 129 minutes
+minute:21 1093 sleeps
+minute:50 1093 wakes. he slept a total of 97 minutes
+minute:00 151 sleeps
+minute:43 151 wakes. he slept a total of 115 minutes
+minute:57 151 sleeps
+minute:58 151 wakes. he slept a total of 116 minutes
+minute:23 151 sleeps
+minute:55 151 wakes. he slept a total of 148 minutes
+minute:07 1907 sleeps
+minute:41 1907 wakes. he slept a total of 106 minutes
+minute:57 1907 sleeps
+minute:59 1907 wakes. he slept a total of 108 minutes
+minute:32 1093 sleeps
+minute:41 1093 wakes. he slept a total of 106 minutes
+minute:49 1093 sleeps
+minute:50 1093 wakes. he slept a total of 107 minutes
+minute:10 2663 sleeps
+minute:58 2663 wakes. he slept a total of 133 minutes
+minute:03 2663 sleeps
+minute:24 2663 wakes. he slept a total of 154 minutes
+minute:34 2663 sleeps
+minute:45 2663 wakes. he slept a total of 165 minutes
+minute:08 3319 sleeps
+minute:56 3319 wakes. he slept a total of 130 minutes
+minute:17 1093 sleeps
+minute:52 1093 wakes. he slept a total of 142 minutes
+minute:08 2963 sleeps
+minute:27 2963 wakes. he slept a total of 148 minutes
+minute:03 2963 sleeps
+minute:31 2963 wakes. he slept a total of 176 minutes
+minute:43 1907 sleeps
+minute:48 1907 wakes. he slept a total of 113 minutes
+minute:21 1093 sleeps
+minute:26 1093 wakes. he slept a total of 147 minutes
+minute:39 1093 sleeps
+minute:46 1093 wakes. he slept a total of 154 minutes
+minute:03 1093 sleeps
+minute:34 1093 wakes. he slept a total of 185 minutes
+minute:24 709 sleeps
+minute:27 709 wakes. he slept a total of 139 minutes
+minute:35 709 sleeps
+minute:52 709 wakes. he slept a total of 156 minutes
+minute:14 1907 sleeps
+minute:25 1907 wakes. he slept a total of 124 minutes
+minute:47 1907 sleeps
+minute:50 1907 wakes. he slept a total of 127 minutes
+minute:00 3319 sleeps
+minute:28 3319 wakes. he slept a total of 158 minutes
+minute:37 3319 sleeps
+minute:53 3319 wakes. he slept a total of 174 minutes
+minute:28 2663 sleeps
+minute:53 2663 wakes. he slept a total of 190 minutes
+minute:07 503 sleeps
+minute:52 503 wakes. he slept a total of 100 minutes
+minute:09 919 sleeps
+minute:10 919 wakes. he slept a total of 92 minutes
+minute:23 919 sleeps
+minute:51 919 wakes. he slept a total of 120 minutes
+minute:12 853 sleeps
+minute:20 853 wakes. he slept a total of 181 minutes
+minute:44 853 sleeps
+minute:52 853 wakes. he slept a total of 189 minutes
+minute:17 2917 sleeps
+minute:26 2917 wakes. he slept a total of 257 minutes
+minute:35 2917 sleeps
+minute:57 2917 wakes. he slept a total of 279 minutes
+minute:07 1093 sleeps
+minute:16 1093 wakes. he slept a total of 194 minutes
+minute:25 1093 sleeps
+minute:51 1093 wakes. he slept a total of 220 minutes
+minute:18 1093 sleeps
+minute:58 1093 wakes. he slept a total of 260 minutes
+minute:20 1801 sleeps
+minute:44 1801 wakes. he slept a total of 72 minutes
+minute:15 1741 sleeps
+minute:27 1741 wakes. he slept a total of 113 minutes
+minute:42 1741 sleeps
+minute:52 1741 wakes. he slept a total of 123 minutes
+minute:27 1741 sleeps
+minute:59 1741 wakes. he slept a total of 155 minutes
+minute:21 2917 sleeps
+minute:42 2917 wakes. he slept a total of 300 minutes
+minute:33 73 sleeps
+minute:34 73 wakes. he slept a total of 38 minutes
+minute:39 73 sleeps
+minute:47 73 wakes. he slept a total of 46 minutes
+minute:53 73 sleeps
+minute:58 73 wakes. he slept a total of 51 minutes
+minute:52 593 sleeps
+minute:59 593 wakes. he slept a total of 38 minutes
+minute:21 2111 sleeps
+minute:29 2111 wakes. he slept a total of 8 minutes
+minute:23 2111 sleeps
+minute:35 2111 wakes. he slept a total of 20 minutes
+minute:41 2111 sleeps
+minute:47 2111 wakes. he slept a total of 26 minutes
+minute:16 2111 sleeps
+minute:49 2111 wakes. he slept a total of 59 minutes
+minute:05 2111 sleeps
+minute:35 2111 wakes. he slept a total of 89 minutes
+minute:26 919 sleeps
+minute:40 919 wakes. he slept a total of 134 minutes
+minute:36 1907 sleeps
+minute:39 1907 wakes. he slept a total of 130 minutes
+minute:21 3361 sleeps
+minute:38 3361 wakes. he slept a total of 47 minutes
+minute:43 3361 sleeps
+minute:56 3361 wakes. he slept a total of 60 minutes
+minute:31 1907 sleeps
+minute:46 1907 wakes. he slept a total of 145 minutes
+minute:24 503 sleeps
+minute:51 503 wakes. he slept a total of 127 minutes
+minute:01 503 sleeps
+minute:22 503 wakes. he slept a total of 148 minutes
+minute:38 503 sleeps
+minute:55 503 wakes. he slept a total of 165 minutes
+minute:19 3319 sleeps
+minute:51 3319 wakes. he slept a total of 206 minutes
+minute:55 3319 sleeps
+minute:57 3319 wakes. he slept a total of 208 minutes
+minute:11 1801 sleeps
+minute:44 1801 wakes. he slept a total of 105 minutes
+minute:53 1801 sleeps
+minute:58 1801 wakes. he slept a total of 110 minutes
+minute:13 103 sleeps
+minute:39 103 wakes. he slept a total of 140 minutes
+minute:48 103 sleeps
+minute:57 103 wakes. he slept a total of 149 minutes
+minute:48 103 sleeps
+minute:53 103 wakes. he slept a total of 154 minutes
+minute:29 2887 sleeps
+minute:40 2887 wakes. he slept a total of 152 minutes
+minute:24 709 sleeps
+minute:40 709 wakes. he slept a total of 172 minutes
+minute:45 709 sleeps
+minute:53 709 wakes. he slept a total of 180 minutes
+minute:35 73 sleeps
+minute:54 73 wakes. he slept a total of 70 minutes
+minute:06 1741 sleeps
+minute:49 1741 wakes. he slept a total of 198 minutes
+minute:05 1741 sleeps
+minute:49 1741 wakes. he slept a total of 242 minutes
+minute:13 2917 sleeps
+minute:56 2917 wakes. he slept a total of 343 minutes
+minute:50 2917 sleeps
+minute:58 2917 wakes. he slept a total of 351 minutes
+minute:14 3361 sleeps
+minute:53 3361 wakes. he slept a total of 99 minutes
+minute:31 1093 sleeps
+minute:37 1093 wakes. he slept a total of 266 minutes
+minute:40 1093 sleeps
+minute:46 1093 wakes. he slept a total of 272 minutes
+minute:55 1093 sleeps
+minute:59 1093 wakes. he slept a total of 276 minutes
+minute:21 2843 sleeps
+minute:55 2843 wakes. he slept a total of 107 minutes
+minute:15 2843 sleeps
+minute:49 2843 wakes. he slept a total of 141 minutes
+minute:27 919 sleeps
+minute:35 919 wakes. he slept a total of 142 minutes
+minute:12 919 sleeps
+minute:40 919 wakes. he slept a total of 170 minutes
+minute:46 919 sleeps
+minute:59 919 wakes. he slept a total of 183 minutes
+minute:15 2663 sleeps
+minute:16 2663 wakes. he slept a total of 191 minutes
+minute:23 2663 sleeps
+minute:51 2663 wakes. he slept a total of 219 minutes
+minute:55 2663 sleeps
+minute:56 2663 wakes. he slept a total of 220 minutes
+minute:28 2887 sleeps
+minute:34 2887 wakes. he slept a total of 158 minutes
+minute:15 1801 sleeps
+minute:29 1801 wakes. he slept a total of 124 minutes
+minute:38 1801 sleeps
+minute:47 1801 wakes. he slept a total of 133 minutes
+minute:36 2111 sleeps
+minute:47 2111 wakes. he slept a total of 100 minutes
+minute:52 1741 sleeps
+minute:53 1741 wakes. he slept a total of 243 minutes
+minute:09 503 sleeps
+minute:11 503 wakes. he slept a total of 167 minutes
+minute:26 503 sleeps
+minute:34 503 wakes. he slept a total of 175 minutes
+minute:46 503 sleeps
+minute:56 503 wakes. he slept a total of 185 minutes
+minute:30 503 sleeps
+minute:39 503 wakes. he slept a total of 194 minutes
+minute:47 503 sleeps
+minute:49 503 wakes. he slept a total of 196 minutes
+minute:07 2663 sleeps
+minute:37 2663 wakes. he slept a total of 250 minutes
+minute:14 503 sleeps
+minute:24 503 wakes. he slept a total of 206 minutes
+minute:54 503 sleeps
+minute:58 503 wakes. he slept a total of 210 minutes
+minute:27 1801 sleeps
+minute:45 1801 wakes. he slept a total of 151 minutes
+minute:54 1801 sleeps
+minute:56 1801 wakes. he slept a total of 153 minutes
+minute:05 1801 sleeps
+minute:46 1801 wakes. he slept a total of 194 minutes
+minute:30 2663 sleeps
+minute:52 2663 wakes. he slept a total of 272 minutes
+minute:57 2663 sleeps
+minute:59 2663 wakes. he slept a total of 274 minutes
+minute:24 2887 sleeps
+minute:36 2887 wakes. he slept a total of 170 minutes
+minute:16 1907 sleeps
+minute:44 1907 wakes. he slept a total of 173 minutes
+minute:50 1907 sleeps
+minute:51 1907 wakes. he slept a total of 174 minutes
+minute:26 1907 sleeps
+minute:27 1907 wakes. he slept a total of 175 minutes
+minute:41 1907 sleeps
+minute:55 1907 wakes. he slept a total of 189 minutes
+minute:23 2663 sleeps
+minute:30 2663 wakes. he slept a total of 281 minutes
+minute:37 2663 sleeps
+minute:42 2663 wakes. he slept a total of 286 minutes
+minute:02 2917 sleeps
+minute:33 2917 wakes. he slept a total of 382 minutes
+minute:40 2917 sleeps
+minute:43 2917 wakes. he slept a total of 385 minutes
+minute:49 2917 sleeps
+minute:57 2917 wakes. he slept a total of 393 minutes
+minute:02 2917 sleeps
+minute:18 2917 wakes. he slept a total of 409 minutes
+minute:25 2917 sleeps
+minute:38 2917 wakes. he slept a total of 422 minutes
+minute:45 2843 sleeps
+minute:47 2843 wakes. he slept a total of 143 minutes
+minute:18 1741 sleeps
+minute:58 1741 wakes. he slept a total of 283 minutes
+minute:14 1741 sleeps
+minute:54 1741 wakes. he slept a total of 323 minutes
+minute:57 1741 sleeps
+minute:58 1741 wakes. he slept a total of 324 minutes
+minute:15 1801 sleeps
+minute:42 1801 wakes. he slept a total of 221 minutes
+minute:30 3361 sleeps
+minute:52 3361 wakes. he slept a total of 121 minutes
+minute:57 3361 sleeps
+minute:59 3361 wakes. he slept a total of 123 minutes
+minute:31 3319 sleeps
+minute:48 3319 wakes. he slept a total of 225 minutes
+minute:52 3319 sleeps
+minute:58 3319 wakes. he slept a total of 231 minutes
+minute:43 2663 sleeps
+minute:53 2663 wakes. he slept a total of 296 minutes
+minute:28 2663 sleeps
+minute:45 2663 wakes. he slept a total of 313 minutes
+minute:49 2663 sleeps
+minute:58 2663 wakes. he slept a total of 322 minutes
+minute:11 2917 sleeps
+minute:29 2917 wakes. he slept a total of 440 minutes
+minute:33 2917 sleeps
+minute:36 2917 wakes. he slept a total of 443 minutes
+minute:42 2083 sleeps
+minute:44 2083 wakes. he slept a total of 76 minutes
+minute:48 2083 sleeps
+minute:52 2083 wakes. he slept a total of 80 minutes
+minute:06 2083 sleeps
+minute:47 2083 wakes. he slept a total of 121 minutes
+minute:16 2083 sleeps
+minute:46 2083 wakes. he slept a total of 151 minutes
+minute:34 1801 sleeps
+minute:56 1801 wakes. he slept a total of 243 minutes
+minute:07 2663 sleeps
+minute:11 2663 wakes. he slept a total of 326 minutes
+minute:32 2663 sleeps
+minute:50 2663 wakes. he slept a total of 344 minutes
+minute:05 2663 sleeps
+minute:25 2663 wakes. he slept a total of 364 minutes
+minute:39 2663 sleeps
+minute:41 2663 wakes. he slept a total of 366 minutes
+minute:25 2843 sleeps
+minute:47 2843 wakes. he slept a total of 165 minutes
+minute:19 2111 sleeps
+minute:48 2111 wakes. he slept a total of 129 minutes
+minute:23 2111 sleeps
+minute:40 2111 wakes. he slept a total of 146 minutes
+minute:25 853 sleeps
+minute:43 853 wakes. he slept a total of 207 minutes
+minute:46 853 sleeps
+minute:49 853 wakes. he slept a total of 210 minutes
+minute:16 103 sleeps
+minute:24 103 wakes. he slept a total of 162 minutes
+minute:33 103 sleeps
+minute:56 103 wakes. he slept a total of 185 minutes
+minute:21 2083 sleeps
+minute:49 2083 wakes. he slept a total of 179 minutes
+minute:05 2083 sleeps
+minute:33 2083 wakes. he slept a total of 207 minutes
+minute:37 2083 sleeps
+minute:53 2083 wakes. he slept a total of 223 minutes
+minute:40 2963 sleeps
+minute:45 2963 wakes. he slept a total of 181 minutes
+minute:50 2963 sleeps
+minute:54 2963 wakes. he slept a total of 185 minutes
+minute:02 2663 sleeps
+minute:12 2663 wakes. he slept a total of 376 minutes
+minute:19 2663 sleeps
+minute:53 2663 wakes. he slept a total of 410 minutes
+minute:01 2663 sleeps
+minute:24 2663 wakes. he slept a total of 433 minutes
+minute:07 503 sleeps
+minute:31 503 wakes. he slept a total of 234 minutes
+minute:24 1741 sleeps
+minute:55 1741 wakes. he slept a total of 355 minutes
+minute:57 2083 sleeps
+minute:59 2083 wakes. he slept a total of 225 minutes
+minute:35 2083 sleeps
+minute:43 2083 wakes. he slept a total of 233 minutes
+minute:30 2843 sleeps
+minute:48 2843 wakes. he slept a total of 183 minutes
+minute:51 2843 sleeps
+minute:52 2843 wakes. he slept a total of 184 minutes
+minute:57 2843 sleeps
+minute:58 2843 wakes. he slept a total of 185 minutes
+minute:16 2111 sleeps
+minute:36 2111 wakes. he slept a total of 166 minutes
+minute:00 2111 sleeps
+minute:36 2111 wakes. he slept a total of 202 minutes
+minute:40 2111 sleeps
+minute:51 2111 wakes. he slept a total of 213 minutes
+minute:15 2887 sleeps
+minute:23 2887 wakes. he slept a total of 178 minutes
+minute:30 2887 sleeps
+minute:33 2887 wakes. he slept a total of 181 minutes
+minute:43 2887 sleeps
+minute:46 2887 wakes. he slept a total of 184 minutes
+minute:32 2887 sleeps
+minute:48 2887 wakes. he slept a total of 200 minutes
+minute:56 2963 sleeps
+minute:57 2963 wakes. he slept a total of 186 minutes
+minute:18 73 sleeps
+minute:51 73 wakes. he slept a total of 103 minutes
+minute:43 2963 sleeps
+minute:53 2963 wakes. he slept a total of 196 minutes
+minute:56 2963 sleeps
+minute:58 2963 wakes. he slept a total of 198 minutes
+minute:17 709 sleeps
+minute:29 709 wakes. he slept a total of 192 minutes
+minute:40 709 sleeps
+minute:48 709 wakes. he slept a total of 200 minutes
+minute:07 709 sleeps
+minute:09 709 wakes. he slept a total of 202 minutes
+minute:32 73 sleeps
+minute:46 73 wakes. he slept a total of 117 minutes
+minute:27 1907 sleeps
+minute:56 1907 wakes. he slept a total of 218 minutes
+minute:00 1907 sleeps
+minute:30 1907 wakes. he slept a total of 248 minutes
+minute:37 1907 sleeps
+minute:53 1907 wakes. he slept a total of 264 minutes
+minute:31 709 sleeps
+minute:42 709 wakes. he slept a total of 213 minutes
+minute:48 709 sleeps
+minute:53 709 wakes. he slept a total of 218 minutes
+minute:24 2963 sleeps
+minute:58 2963 wakes. he slept a total of 232 minutes
+minute:01 3361 sleeps
+minute:55 3361 wakes. he slept a total of 177 minutes
+minute:13 2663 sleeps
+minute:47 2663 wakes. he slept a total of 467 minutes
+minute:11 3319 sleeps
+minute:40 3319 wakes. he slept a total of 260 minutes
+minute:01 73 sleeps
+minute:33 73 wakes. he slept a total of 149 minutes
+minute:44 73 sleeps
+minute:55 73 wakes. he slept a total of 160 minutes
+minute:05 73 sleeps
+minute:48 73 wakes. he slept a total of 203 minutes
+minute:13 1741 sleeps
+minute:37 1741 wakes. he slept a total of 379 minutes
+minute:00 3361 sleeps
+minute:46 3361 wakes. he slept a total of 223 minutes
+minute:54 3361 sleeps
+minute:58 3361 wakes. he slept a total of 227 minutes
+minute:36 3361 sleeps
+minute:42 3361 wakes. he slept a total of 233 minutes
+minute:46 3361 sleeps
+minute:59 3361 wakes. he slept a total of 246 minutes
+minute:27 103 sleeps
+minute:52 103 wakes. he slept a total of 210 minutes
+minute:42 1801 sleeps
+minute:59 1801 wakes. he slept a total of 260 minutes
+minute:05 1801 sleeps
+minute:08 1801 wakes. he slept a total of 263 minutes
+minute:17 1801 sleeps
+minute:49 1801 wakes. he slept a total of 295 minutes
+minute:13 2963 sleeps
+minute:28 2963 wakes. he slept a total of 247 minutes
+minute:08 3361 sleeps
+minute:40 3361 wakes. he slept a total of 278 minutes
+minute:04 3361 sleeps
+minute:59 3361 wakes. he slept a total of 333 minutes
+minute:47 2843 sleeps
+minute:49 2843 wakes. he slept a total of 187 minutes
+minute:06 1093 sleeps
+minute:31 1093 wakes. he slept a total of 301 minutes
+minute:37 1093 sleeps
+minute:53 1093 wakes. he slept a total of 317 minutes
+minute:30 1093 sleeps
+minute:42 1093 wakes. he slept a total of 329 minutes
+minute:34 73 sleeps
+minute:49 73 wakes. he slept a total of 218 minutes
+minute:08 2843 sleeps
+minute:20 2843 wakes. he slept a total of 199 minutes
+minute:46 2843 sleeps
+minute:58 2843 wakes. he slept a total of 211 minutes
+minute:11 3361 sleeps
+minute:32 3361 wakes. he slept a total of 354 minutes
+minute:42 3361 sleeps
+minute:47 3361 wakes. he slept a total of 359 minutes
+minute:53 3361 sleeps
+minute:58 3361 wakes. he slept a total of 364 minutes
+minute:12 1907 sleeps
+minute:53 1907 wakes. he slept a total of 305 minutes
+minute:13 2917 sleeps
+minute:41 2917 wakes. he slept a total of 471 minutes
+minute:18 151 sleeps
+minute:43 151 wakes. he slept a total of 173 minutes
+minute:47 151 sleeps
+minute:51 151 wakes. he slept a total of 177 minutes
+minute:57 151 sleeps
+minute:58 151 wakes. he slept a total of 178 minutes
+minute:25 1907 sleeps
+minute:32 1907 wakes. he slept a total of 312 minutes
+minute:49 709 sleeps
+minute:58 709 wakes. he slept a total of 227 minutes
+minute:17 1741 sleeps
+minute:36 1741 wakes. he slept a total of 398 minutes
+minute:50 1741 sleeps
+minute:59 1741 wakes. he slept a total of 407 minutes
+minute:39 2843 sleeps
+minute:54 2843 wakes. he slept a total of 226 minutes
+minute:23 1741 sleeps
+minute:35 1741 wakes. he slept a total of 419 minutes
+minute:41 1741 sleeps
+minute:56 1741 wakes. he slept a total of 434 minutes
+minute:25 2111 sleeps
+minute:26 2111 wakes. he slept a total of 214 minutes
+minute:40 2111 sleeps
+minute:41 2111 wakes. he slept a total of 215 minutes
+minute:46 2111 sleeps
+minute:47 2111 wakes. he slept a total of 216 minutes
+minute:52 2111 sleeps
+minute:56 2111 wakes. he slept a total of 220 minutes
+minute:01 853 sleeps
+minute:11 853 wakes. he slept a total of 220 minutes
+minute:31 853 sleeps
+minute:56 853 wakes. he slept a total of 245 minutes
+minute:43 853 sleeps
+minute:47 853 wakes. he slept a total of 249 minutes
+minute:24 3361 sleeps
+minute:49 3361 wakes. he slept a total of 389 minutes
+minute:42 3361 sleeps
+minute:47 3361 wakes. he slept a total of 394 minutes
+minute:51 3361 sleeps
+minute:53 3361 wakes. he slept a total of 396 minutes
+minute:16 1907 sleeps
+minute:22 1907 wakes. he slept a total of 318 minutes
+minute:49 1907 sleeps
+minute:50 1907 wakes. he slept a total of 319 minutes
+minute:03 853 sleeps
+minute:16 853 wakes. he slept a total of 262 minutes
+minute:25 853 sleeps
+minute:57 853 wakes. he slept a total of 294 minutes
+minute:32 853 sleeps
+minute:41 853 wakes. he slept a total of 303 minutes
+minute:15 853 sleeps
+minute:50 853 wakes. he slept a total of 338 minutes
+minute:03 853 sleeps
+minute:40 853 wakes. he slept a total of 375 minutes
+minute:44 853 sleeps
+minute:57 853 wakes. he slept a total of 388 minutes
+minute:34 1093 sleeps
+minute:55 1093 wakes. he slept a total of 350 minutes
+minute:37 853 sleeps
+minute:43 853 wakes. he slept a total of 394 minutes
+minute:53 853 sleeps
+minute:59 853 wakes. he slept a total of 400 minutes
+minute:21 919 sleeps
+minute:41 919 wakes. he slept a total of 203 minutes
+minute:44 919 sleeps
+minute:46 919 wakes. he slept a total of 205 minutes
+minute:37 919 sleeps
+minute:44 919 wakes. he slept a total of 212 minutes
+minute:56 919 sleeps
+minute:57 919 wakes. he slept a total of 213 minutes
+minute:07 2843 sleeps
+minute:37 2843 wakes. he slept a total of 256 minutes
