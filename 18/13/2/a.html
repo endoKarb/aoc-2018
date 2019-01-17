@@ -1,0 +1,634 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://adventofcode.com/2018/day/13
+Subject: Day 13 - Advent of Code 2018
+Date: Thu, 13 Dec 2018 12:54:28 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----"
+
+
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----
+Content-Type: text/html
+Content-ID: <frame-39C80812D363A28CC3268CD8A7C93A14@mhtml.blink>
+Content-Transfer-Encoding: binary
+Content-Location: https://adventofcode.com/2018/day/13
+
+<!DOCTYPE html><html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Day 13 - Advent of Code 2018</title>
+<!--[if lt IE 9]><script src="/static/html5.js"></script><![endif]-->
+<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:300&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://adventofcode.com/static/style.css?18">
+<link rel="stylesheet alternate" type="text/css" href="https://adventofcode.com/static/highcontrast.css?0" title="High Contrast">
+<link rel="shortcut icon" href="https://adventofcode.com/favicon.png">
+</head><!--
+
+
+
+
+Oh, hello!  Funny seeing you here.
+
+I appreciate your enthusiasm, but you aren't going to find much down here.
+There certainly aren't clues to any of the puzzles.  The best surprises don't
+even appear in the source until you unlock them for real.
+
+Please be careful with automated requests; I'm not Google, and I can only take
+so much traffic.  Please be considerate so that everyone gets to play.
+
+If you're curious about how Advent of Code works, it's running on some custom
+Perl code. Other than a few integrations (auth, analytics, ads, social media),
+I built the whole thing myself, including the design, animations, prose, and
+all of the puzzles.
+
+The puzzles are most of the work; the easiest ones take 3-4 hours each, but the
+harder ones take 6-8 hours, and a few even longer than that. A lot of effort
+went into building this thing - I hope you're enjoying playing it as much as I
+enjoyed making it for you!
+
+If you'd like to hang out, I'm @ericwastl on Twitter.
+
+- Eric Wastl
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-->
+<body>
+<header><div><h1 class="title-global"><a href="https://adventofcode.com/">Advent of Code</a></h1><nav><ul><li><a href="https://adventofcode.com/2018/about">[About]</a></li><li><a href="https://adventofcode.com/2018/events">[Events]</a></li><li><a href="https://teespring.com/adventofcode" target="_blank">[Shop]</a></li><li><a href="https://adventofcode.com/2018/settings">[Settings]</a></li><li><a href="https://adventofcode.com/2018/auth/logout">[Log Out]</a></li></ul></nav><div class="user">bugTrap <span class="star-count">25*</span></div></div><div><h1 class="title-event">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="title-event-wrap">/^</span><a href="https://adventofcode.com/2018">2018</a><span class="title-event-wrap">$/</span></h1><nav><ul><li><a href="https://adventofcode.com/2018">[Calendar]</a></li><li><a href="https://adventofcode.com/2018/support">[AoC++]</a></li><li><a href="https://adventofcode.com/2018/sponsors">[Sponsors]</a></li><li><a href="https://adventofcode.com/2018/leaderboard">[Leaderboard]</a></li><li><a href="https://adventofcode.com/2018/stats">[Stats]</a></li></ul></nav></div></header>
+
+<div id="sidebar">
+<div id="sponsor"><div class="quiet">Our <a href="https://adventofcode.com/2018/sponsors">sponsors</a> help make Advent of Code possible:</div><div class="sponsor"><a href="https://formlabs.com/jobs/" target="_blank" rel="noopener">Formlabs</a> - 3D printing with lasers. Software, hardware, and more. Pew pew!</div></div>
+</div><!--/sidebar-->
+
+<main>
+<article class="day-desc"><h2>--- Day 13: Mine Cart Madness ---</h2><p>A crop of this size requires significant logistics to transport produce, soil, fertilizer, and so on. The Elves are very busy pushing things around in <em>carts</em> on some kind of rudimentary system of tracks they've come up with.</p>
+<p>Seeing as how cart-and-track systems don't appear in recorded history for another 1000 years, the Elves seem to be making this up as they go along. They haven't even figured out how to avoid collisions yet.</p>
+<p>You map out the tracks (your puzzle input) and see where you can help.</p>
+<p>Tracks consist of straight paths (<code>|</code> and <code>-</code>), curves (<code>/</code> and <code>\</code>), and intersections (<code>+</code>). Curves connect exactly two perpendicular pieces of track; for example, this is a closed loop:</p>
+<pre><code>/----\
+|    |
+|    |
+\----/
+</code></pre>
+<p>Intersections occur when two perpendicular paths cross. At an intersection, a cart is capable of turning left, turning right, or continuing straight.  Here are two loops connected by two intersections:</p>
+<pre><code>/-----\
+|     |
+|  /--+--\
+|  |  |  |
+\--+--/  |
+   |     |
+   \-----/
+</code></pre>
+<p>Several <em>carts</em> are also on the tracks. Carts always face either up (<code>^</code>), down (<code>v</code>), left (<code>&lt;</code>), or right (<code>&gt;</code>). (On your initial map, the track under each cart is a straight path matching the direction the cart is facing.)</p>
+<p>Each time a cart has the option to turn (by arriving at any intersection), it turns <em>left</em> the first time, goes <em>straight</em> the second time, turns <em>right</em> the third time, and then repeats those directions starting again with <em>left</em> the fourth time, <em>straight</em> the fifth time, and so on. This process is independent of the particular intersection at which the cart has arrived - that is, the cart has no per-intersection memory.</p>
+<p>Carts all move at the same speed; they take turns moving a single step at a time. They do this based on their <em>current location</em>: carts on the top row move first (acting from left to right), then carts on the second row move (again from left to right), then carts on the third row, and so on.  Once each cart has moved one step, the process repeats; each of these loops is called a <em>tick</em>.</p>
+<p>For example, suppose there are two carts on a straight track:</p>
+<pre><code>|  |  |  |  |
+v  |  |  |  |
+|  v  v  |  |
+|  |  |  v  X
+|  |  ^  ^  |
+^  ^  |  |  |
+|  |  |  |  |
+</code></pre>
+<p>First, the top cart moves. It is facing down (<code>v</code>), so it moves down one square.  Second, the bottom cart moves.  It is facing up (<code>^</code>), so it moves up one square. Because all carts have moved, the first tick ends.  Then, the process repeats, starting with the first cart.  The first cart moves down, then the second cart moves up - right into the first cart, colliding with it! (The location of the crash is marked with an <code>X</code>.) This ends the second and last tick.</p><p>
+</p><p>Here is a longer example:</p>
+<pre><code>/-&gt;-\        
+|   |  /----\
+| /-+--+-\  |
+| | |  | v  |
+\-+-/  \-+--/
+  \------/   
+
+/--&gt;\        
+|   |  /----\
+| /-+--+-\  |
+| | |  | |  |
+\-+-/  \-&gt;--/
+  \------/   
+
+/---v        
+|   |  /----\
+| /-+--+-\  |
+| | |  | |  |
+\-+-/  \-+&gt;-/
+  \------/   
+
+/---\        
+|   v  /----\
+| /-+--+-\  |
+| | |  | |  |
+\-+-/  \-+-&gt;/
+  \------/   
+
+/---\        
+|   |  /----\
+| /-&gt;--+-\  |
+| | |  | |  |
+\-+-/  \-+--^
+  \------/   
+
+/---\        
+|   |  /----\
+| /-+&gt;-+-\  |
+| | |  | |  ^
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /----\
+| /-+-&gt;+-\  ^
+| | |  | |  |
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /----&lt;
+| /-+--&gt;-\  |
+| | |  | |  |
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /---&lt;\
+| /-+--+&gt;\  |
+| | |  | |  |
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /--&lt;-\
+| /-+--+-v  |
+| | |  | |  |
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /-&lt;--\
+| /-+--+-\  |
+| | |  | v  |
+\-+-/  \-+--/
+  \------/   
+
+/---\        
+|   |  /&lt;---\
+| /-+--+-\  |
+| | |  | |  |
+\-+-/  \-&lt;--/
+  \------/   
+
+/---\        
+|   |  v----\
+| /-+--+-\  |
+| | |  | |  |
+\-+-/  \&lt;+--/
+  \------/   
+
+/---\        
+|   |  /----\
+| /-+--v-\  |
+| | |  | |  |
+\-+-/  ^-+--/
+  \------/   
+
+/---\        
+|   |  /----\
+| /-+--+-\  |
+| | |  X |  |
+\-+-/  \-+--/
+  \------/   
+</code></pre>
+<p>After following their respective paths for a while, the carts eventually crash.  To help prevent crashes, you'd like to know <em>the location of the first crash</em>. Locations are given in <code>X,Y</code> coordinates, where the furthest left column is <code>X=0</code> and the furthest top row is <code>Y=0</code>:</p>
+<pre><code>           111
+ 0123456789012
+0/---\        
+1|   |  /----\
+2| /-+--+-\  |
+3| | |  X |  |
+4\-+-/  \-+--/
+5  \------/   
+</code></pre>
+<p>In this example, the location of the first crash is <code><em>7,3</em></code>.</p>
+</article>
+<p>Your puzzle answer was <code>26,99</code>.</p><p class="day-success">The first half of this puzzle is complete! It provides one gold star: *</p>
+<article class="day-desc"><h2 id="part2">--- Part Two ---</h2><p>There isn't much you can do to prevent crashes in this ridiculous system. However, by predicting the crashes, the Elves know where to be in advance and <em>instantly remove the two crashing carts</em> the moment any crash occurs.</p>
+<p>They can proceed like this for a while, but eventually, they're going to run out of carts. It could be useful to figure out where the last cart that <em>hasn't</em> crashed will end up.</p>
+<p>For example:</p>
+<pre><code>/&gt;-&lt;\  
+|   |  
+| /&lt;+-\
+| | | v
+\&gt;+&lt;/ |
+  |   ^
+  \&lt;-&gt;/
+
+/---\  
+|   |  
+| v-+-\
+| | | |
+\-+-/ |
+  |   |
+  ^---^
+
+/---\  
+|   |  
+| /-+-\
+| v | |
+\-+-/ |
+  ^   ^
+  \---/
+
+/---\  
+|   |  
+| /-+-\
+| | | |
+\-+-/ <em>^</em>
+  |   |
+  \---/
+</code></pre>
+<p>After four very expensive crashes, a tick ends with only one cart remaining; its final location is <code><em>6,4</em></code>.</p>
+<p><em>What is the location of the last cart</em> at the end of the first tick where it is the only cart left?</p>
+</article>
+<p>Although it hasn't changed, you can still <a href="https://adventofcode.com/2018/day/13/input" target="_blank">get your puzzle input</a>.</p>
+<form method="post" action="https://adventofcode.com/2018/day/13/answer"><p>Answer: <input type="text" name="answer" autocomplete="off"> <input type="submit" value="[Submit]"></p></form>
+<p>You can also <span class="share">[Share<span class="share-content">on
+  <a href="https://twitter.com/intent/tweet?text=I%27ve+completed+Part+One+of+%22Mine+Cart+Madness%22+%2D+Day+13+%2D+Advent+of+Code+2018&amp;url=https%3A%2F%2Fadventofcode%2Ecom%2F2018%2Fday%2F13&amp;related=ericwastl&amp;hashtags=AdventOfCode" target="_blank">Twitter</a>
+  <a href="http://www.reddit.com/submit?url=https%3A%2F%2Fadventofcode%2Ecom%2F2018%2Fday%2F13&amp;title=I%27ve+completed+Part+One+of+%22Mine+Cart+Madness%22+%2D+Day+13+%2D+Advent+of+Code+2018" target="_blank">Reddit</a></span>]</span> this puzzle.</p>
+</main>
+
+<!-- ga -->
+
+<!-- /ga -->
+
+</body></html>
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.googleapis.com/css?family=Source+Code+Pro:300&subset=latin,latin-ext
+
+@charset "utf-8";
+
+@font-face { font-family: "Source Code Pro"; font-style: normal; font-weight: 300; src: local("Source Code Pro Light"), local("SourceCodePro-Light"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7PqtlsnDvecq7Gq0DDzS.woff2") format("woff2"); unicode-range: U+100-24F, U+259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: "Source Code Pro"; font-style: normal; font-weight: 300; src: local("Source Code Pro Light"), local("SourceCodePro-Light"), url("https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7PqtlsnDs-cq7Gq0DA.woff2") format("woff2"); unicode-range: U+0-FF, U+131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----
+Content-Type: font/woff2
+Content-Transfer-Encoding: binary
+Content-Location: https://fonts.gstatic.com/s/sourcecodepro/v8/HI_XiYsKILxRpg3hIP6sJ7fM7PqtlsnDs-cq7Gq0DA.woff2
+
+wOF2     )ˆ     Qè  )/                       :dƒ>` „
+€0åC„" 6$„& „`‰A]AEF† Î‹!Š’ÉÉÿßÔ1ôZÓšàDX8d¦Vdı¶5-Ùeä`¡8Ò+³íÑO±Ãuá™q›Š.³–»¡±Oráÿy½ÿÿ1×NNrÅêr •J£…Q=ÿŸÑœ5@ÀIBd³ÙM6f$X€(	Ä° A‚ˆVü„“ª\E”£JÅìJÛo{Wùö{-XÑ9Ù’‘Bùú‹ûÁw"L
+´ñÀè¥?8ÌCO”@lT'ª×¿ÿğ>ŸÎıİL—µîÁDRÂwß\ªšº¡Á¯š½vûUõäs§ÃÕùä<C/Œ\üúÂU8C„ëîI1gd‰Rxj¨n,óaEmw´ß7ò•^2$µVÿeê¹>Ùı{›e6÷Ó¯öj5	gËE¤rtm4¡)tå.gÎşû;ú¿k@ZäÃxÆ –v·4ƒ4P%PÊ½Ë“L ÒQt—azÑAbHï8½ LÎ{µ<´ĞiAb	wŸÛ×½Ú=R…v“iqµ¨;×ç˜Ù|Dw¥+Lı7€€TÀÏğ¨Í‹FÕÍØÕh š'iVsĞìÅoğº÷LzŞ-ZuèAè„¡3&A†ƒ=K%‘6yI7 < Â[OÆîü¿	/O=6i«utŒà”IŒ$ú$FLš<¬Xù“K"ØØ§sâ4”“€Y!)nˆš—O*µ´˜ŸÂß¾ÑA(WœvÆYçœwÁE—\vÍuW\åC±ßçc¾7ê€ƒ9ìˆ£ÆœpÒ1ÇycÌ3`»ÕBB6A]]r¯%m}©T‘=cÓfó¢ °`§7Ä—÷àS”Æ´¶gsrï§Æ…òÁ\T^”‚¡n¥+C0&äÙõ¶™:ïRÂ³¼Ïgd´Ë4)/¥án‘³Şä¶r. í+÷Pƒ,ÅKr3ó€ 2·é³YKóˆŠ]ŞÏc?p„ÀkS ôÂ(²ê4P¹¬…fœÙ[¯5_B Ê¨(Õgª1W{aÂ«ª;¼3öÀ‰‚É0#0ËáDXwÀÛc>c‰@¢'&$÷ÈŠH¤QÈ£ß*Ç\óÄKIeÛ¡¿µ#aLİ&œP_ü&@; >	ˆ ¤zºå3Õ%ƒ ıù ¼øú$şÄmFÓø×•ôîÏ/.Õ0Æmpš€#p¾˜œÏ7~ãnÎ±Â7v»ç‰^_o˜jKòï©9–šmƒ¹>ó»ßüaÀ.kl²Ö_VzË:­÷w“Xé‘ûîz`³­şÏv7,öÜ°>pÇŸöÚç¼°ÍrÙã¦%zæG_q0I—ÁÌÂê6™²dË‘+O‹n5jÕ©× Ñ¯š´jÓ®C§]ìš}k!óZ  xÂ ” +à ë@ş ¯À  >À!@	‡¥Ì´¡¼±b»«VWµ±Ûöóİ¶*d{\Î
+Ş±ââŠ5¦”I»b\±Yæ¢1;1ôFDs<¹JCG§şHÜ +bğE"ÇUcìáÇÉê&×¨çŸR`²µ"„"“jyò#Ço¦iT¤I•†¶Íw.–Hq\2°>^K¯¢I; {¥ìİ’×å­ûU³*ùxÀR—Fpë8q„ù©Ô
+£QUÎZÁ"xcn7aJB|	bÉı–ÍzÑvçÊp	{Ø÷s©tÊ·İàf‡"TAc
+¡§6 rŒØµ{ÂårşSy"dŸ+ƒh0,òÆ8ÕĞÚ&?HZá€fcCƒJ~Te`œtn¥üˆÆM(„ ¡Âæ<×Ó%Î×Æ&‚„Ä~JÂ 	¸µŸ­¢ÅT…¤ÀãDÀ‹Cö\ó`i§Ç±x»Å½^äK ?9ŠÊ ¡P<¡F9¼!G^ñµj­>Òˆ)PBÏäHaE]3ˆœÄ0àÉ±ACræ™YK Œøü{¤VCób]ªY\ÅtåmTÏeI¥j-ÑêzŸÂÏÅ7HRMò®*èßÓ&¿i\=İL	ƒ™KzæôU!E©ò­MÔQkŞ@.çƒA¥İRGœáã˜8Øº©•x&
+ÒÕ¦D	·©{¢N±B>srÅMÛœÌ{°5(”*vÏ¼ğ~–+¯xØ½àÑ”bWğZ9ù*ÃùJE'ã$A½Á=Ø vÚôä´9¢Ÿ"
+µOŸŸÉş*ZDf ãƒ·”ÃŠ	g'r@§¤ \Côºşñ£Àò^Èœk¥€ÒT’^Hà•’kA’E$ôkDnwKàmÕØ“³È±»ıÎ˜Sv§C~´~[eüŒ©€#<jlù¾÷‰Ï}é»\~ü~´@VáS!xğÁÊ½œ„í¾Ë«Ù!’{`¨Gİ}ÚÇ×DÄÙ”M½Jîˆ)œ¯Z´™j¬³,*y=icnˆò…qeÓ9 9R°‰û¤ğõ)Óa‡\dDJÇÌÅ`sÀƒPQ}xåõ ı¢ºÚ)ßK²›wûôòæ*W
+œXÙ7úöŸ[2±NñêŸ¨ÜÆì¡=}°`,¾âcÁ°æÜ[ÚÕÍT‡öp½º¹~zD.u`=í7n\Ú;W¾tmøŠhÎ	¤QôäQRµ¿5HiÎ»ôW0b$œ{]FUh	1öÒê–ê—/‹÷HÒğÃS“´ñA¬f(†û˜›&>ù3O•–K®\W>#JÊµD„C Qç¨1¸5ÖÂOSj—Üb¥m¾Ê‡W 6Hù™9Ë£èè½c½J6‚yÉÚçé…Œ[w"pŠî¡˜£5¦Ô¹kC³ÇÆû7šT÷’Mwƒ&n×&&+¦	±Ur3n—Ãås8}{²Jˆö–%(_%´Oó Ê×<—Œô†rzÒû²&ğPRDn´pïÿ¸(f¦»ÙÇÓ¬¼‚yñ¿¢=Ş¥;Œïú¶Ùk½ºoSİÙEx(ùñC¢:ƒÖqeP–C°MÕjõú §é]œ’kQw¢ L|zĞ(üB¡‚\—è>46’g>ÅEFw©4–b{aâ†:¦{X;*:819ïíJ{2œOeCç¶Íº“ôfOôy‹YÔWs·>vËSôŠğ»dô40DÉ«v…1û[á#Óu*ú¹5IÆ7ñ@ªÇI|ï“*ı÷x7ê—5pám“G>Ñ+GãÈ\ÚïrI´ñUjcìhé:e6`ı§s®÷UK>[8I‘F5)¦]b[‰edØA<VDP&´öˆñe5i(Yqºòä
+:’­c‘bÕ¼êš]3À!7â‰.±ƒLĞ<ªîôuD¡ÙÖ2‘TÕrIÙ4Ã0ñôÂ¡¢|UNOh¥-6‰3ûqé^h'WÚÏ]YTéÎÍUØBö¸ÔUT90Ñ«±šš)BæÔ¢^è¦-öŠIs¨&¿OèØF’¤	³úA¢•Å¼_9öáuÎ>à!ı-J.Şr¾ŸˆªòMñoÂLÌÊ?Ø‰v–@ªŞıy­ƒ‰<û?Q@ÚÍGàr‡PDâûš‚"pj,ô¦` 1t·H87 ß =’mÂx™Œóéœ;Eå›èÎÍL+kbl\ç™%ãÍıÜs4»n¾£¤UQş/…<òæˆÖ0«-áóêUD˜
+G³ÀÑÔ¼rx³(“Ò|pç ._Â83Ù53NWtá-Ó™â.¢?ÁNÜtŠ¯ÎäfÑ0høİ3Î™ƒøÎŸ-ş–V¦PÉŸ0)o6ç«æ/Z•;û¼±qnêS!$¡iİqˆŸ^[“H¨ò4õÔ½„8*	djeI/2‰ÜÚ·TĞú­W«m%@ÉzÙ»
+>´b)õa.Æµµ±‰Ğ’GR÷¸xb¨ºİM’ş>ò$kVï¨C¾z+|{µ×÷ °È©Ş`¦µb­¨ŠV˜Vd	%x@4óßğ6¤AÙ‚(h«zHŒ$4Ì\×óôÚM‚å®IL!^ªKÎ$âuğ3x›©–Ğs+ÔeÀA‹cŒölõ–5 +×İÊ$lU3Z£÷¼ßâ%tuÛÆòPX…:wØ¬C±®¦x‡4IoÍ3šPÂkiÖôäÒ»`Êâ|4ŒÉv  eº2:¡în¯ÎÓ°Ü)ÈÎÇÚB˜kŸêú¿m,$hÈ³ª‰>Tó5Ìx
+Z§¡º9_;8	BäVr»…•ÈJddÃ¬ÌQiO—’Ó®ïˆ«äóaf>=•ı³
+~– ı6‘¿ØLºƒ™¨İårû¬7IVŠC‚àDQÙ0ÔÙX[¼—¹Äz¨ÿTì~¦!XĞìOèFànğè&)$AF@LêNô÷âyfw	ëÕjbvt56Îf¾ÆCÁ"´ï÷VÆçce¬¸Øw<¶øjJ‰£ ïy¥§‹1ºÒÔoÍ~–â’ÇI]"ñÏÀÅ*>²P VœĞOÕ?Lt¤Hl™N*û­˜»ğË¥Ûm6 ş‚À0"¢pñØ0÷â¯8Ûl®FY½n7·ı(
+¹‰]Gúó£5¿Å?ÕÄ´&ÕF¦#ò9Uö¨æ™ÅÔ6cùÚ_Úë”úujš¦Ím¦¹æ¹<¦»•?ÿ.Ü³02H…÷f;ÿíÇ¬’ºÜ,eàv7ä¦š8‚å.·üg¿¼¹“UdøÅx»ÍÙ¿gâÜƒoÒf4?³¾xšÌkÅTB™¨Vk¡b™D‡>–TËÎÍ7XÜú°|Ù<Ø½D2@È§IñxÎÊb½zÃå{!TÖ¨ÅŞ«PÿÎF"k¦z'"­, ¹ñğËe#<Ÿå£-vúSx/ø[ˆ£zÿxµÈÛÇœIr}p¥¸y>ı÷ÚÄœª¦xíJKl¡c˜š7¬(«¸}‰h}.d+;ıŞb¾Ö§¢_Ÿ?©RĞ6¸¾¢Ã’›`Ù3åÚÄ8Qã÷¶T:5µ;¾°î¿îŒòæôLc£¾²ÆgJº«F”š'Şqd¹‘)TæqU¸Ñ`€›’¬BneÇo+tKÕÉ•b“‹3”.¶4Óh·ÙŒö¥ç5‹ÌK1m	/ÙJ«Ó¨iµÉæ®¶Ò ¦Îå¸Ş#)ãÌgprı ”,‰Òo=ÃU-R3¬‚/o0`
+¥s	ĞãËS
+Ì1Õ——°Oû^+åªS*ÄF{*pŠÑ(c™…Ô±·è¶pfrî?X`Fÿ1‹—î,\Ng[Ï	#mï­Œ„ø2ÅYĞ6(nòÖ7*o½z¹Bñ°ÿ³%?ŠÁÂAA}>g(Lj”a8VGƒ,iˆ™á‰÷au¶*á6%»Óï“É¸Ì…ƒp=m†7İ§X²P0ôªÑBÉà+ó%š|tªÍ†NÖ¸òEÊ›t¢$§10ÿ|‰'·Q›zj£Übâ
+Hr:zÃ ‡x€ÎÁ}qyé¹§¿¸y.E´QSUjÌâÍõÊ˜$ëãj³Ü,³›øB¡‘/³SšõzJ“Ìjä	…&ÌJnÚM}ÏUGG£Û}íŠxÔ“nC¦¤:óÅJ¥Kœê,¶Œ‚åƒì±¾aVY
+•˜¹®¢´ôŒ"•k&19w·è+±hè°Ôñ¤Û\Ö ıRPÛåª'g¹MIôtÑ/Ãå‚š˜EûXÌéD~j™hbÇól¦"-7UIë¶¬‹+ã?,ú¬Ã õŠL²ÌÒ® Qu?sŞq~®× h±šœ{b?9}ƒœ«^Ì_fFÊ‡Í$×BFÊÍ qPÚ;ıkß×ƒå¸$¨‚ß;]tgP&ñÓNƒ¬&ïQ¢uc—CØH°mÄƒlFİ	^íP|QÒäÑÉ>“ïM.HŠøÜÑdYÃñ;ÕA¸Î3ÇÅ£©g²eíçï§á>.¸×~^¢şyºJÜq¿³Tãª¹VCë=áÓUÿŠ€2˜ÙÊŞD´s®ƒÂnÎw.ş—O t'°†KIzÕõ»äş¹ÜÇ°DOİ¥eËY8£÷¼™¾:¾û$9'íR~uŞp¡_Œıj®¯yWU–ÅU•³[’™%*m&"`9ÑdoKàYè€!¶šş;9S*À›«0ïÈ{®âS‹JU6ÿÑò¿ˆPb‡>‡¬1dí¶Ci&ö±Iëæ&Ä3©˜hŸ'2‹R4™ˆPœ–x—^ÅpiŞ/U*[áiû/	Á:ò‰ÃËöÏÉ€1L“(6`yÄ)ÒªˆHj‡zhY±¤Å!¥Ê‰%V*s ©±…½šíş.¿Ğí¶15¤TT—ÄßA1f şÊHÇÆòÎGæù$:+aM°Lqœ	…R[tÖE"÷‡Ô¶ˆÜHäÚwÕ8Òˆxõ$®Œ*`QÇ°XÏ±+ilÖáïX„?
+,ó£Ğ1y·;[šHOÔ‹(‰­Mæyo­¢it>ª\CƒÔ2o?5S®$%n?Î²²R¬&òá-ç†]BP:N{"8øÏ‡¥Q›	„ÍQ÷üÓo˜¯ "mµ‘¬DøíıÇè¼Š_Î0~®üWJßa8NÇ:ğK~-èË™ŸûÊc}K ÷ÆÅVÔ`ÊÈ&íãLœÚ[È±Fä.IâÈF“›ïlLƒÿš\Çq65ÔñAÍ8†+Ä-s%êê£}®bO†X¬ä„•*oŒÛßı§˜bõ×A\òG§X€W|°»Sx Ãé½eğúÚYˆÍCísa[C­J |Df$Õ;u@xÂ»qJ?'kÆ1\§wM›ÉDò¯Yb¤ªtÒ,Ô—4—³2ÌñXø£-Éò…>&ü,‰\ü,-R"©`p¦ıÏN•rŠıãÑ<Q~Š™ú4L™ÇL›;;À“ó‘ù>¾_² ‚Ğ‘;({tq÷G{*ÕP<ái|ğœ…sã]9Åe|Ìbp
+@ò¸h– 6’5¸kı«Ùş­q1[”-ÏKpÓ>µXDR‹¨åÓ4Ü´Ç-f¥ w<ÁÌjÕÎÄµLÒ/HG@Ø»ı¿Èİ½7ï½Â½ÂÍünéß¿•WÎx%Æáü‚üË¦KmóÌÙ“âÆ¼Àß~@La¸qªñÊd!ÿ)e{À£XØëÍ#ÀHì^‰égmûPjÀõH[¾K˜³ı'äş÷=cÁ¹ó~-g-Ö—Ï×¢Üşà *B¹Â¾R‹p—sH&T(²FÂİæÜqJ‰õo|Î¾äÂGp¯¹Á£¿ğÑ§ÊÌS€c6Ã=G©PM`ßı°³yÊÕ¥"MÜ'ÊĞëdVOIL#*m\™™X*ÍVšÅËà·5±™±:Esãò"/d'cCàÒnÙe)üîïO›•?#œ±±§‹æ|u£xš•!–ï,ÏH’3³xá^-Ä›‰6&œ«‚šÎóbò¦97.MG»É
+ÔÍœ©åŞŸo¥€ÛE!½_#”|…Ï}`·	2!b€MìXœßu¹˜ƒM’»89irÆ'ĞyòïMâ5;éyqëtİîÿ(^ˆÃmï&Ôñ ¼M,ÆÛS¡OïÂmGU1Eã×YÒC¤Ú¦1*øÀp?(ú 7ÿ/”A]›jK`ÅZ´Qê(uºVÂz:SÄt²µÙ6
+eøX¸ª£DdS„ÂE:r5T¶ß7¡-’2ÅƒZÎFø&òÒ;Qê¼ƒ7"Q
+4J§1™¸o ÂÏMµäæû Ÿ,Ñ#‡¢²Ä¡!I#¿Ş'HÒhÏZš†è)İ&M²}Ûİ“¤ÏaÆ
+sèêD–C)…³Ï;`…¼@ú6$SÛF^hığ¥ñŒË*Êbéäsô€…÷„›„÷½‹:İB‰ÜŒ¤ÆäÇ'3K’µYˆ€•ƒ– ÏWŒ±r„¹ë18ß?ob¸FlÜîé­NÎ2::r¯‘i¸§Øäğ&ÿQ‚‰Î´?ô[¬CÇÖ“D4vØŞ¥³1XùBÊx],¼pGá>Qq‡@ måGêâû²)?üàÚÖ+Wµnª­U«V:>5-¶Òyƒƒ¥mœguDC4½úÄØ+ØcĞÛôÈÃÈ¢8í³§äÕğ]|(²r?W–+ö¹Ø]¢ĞW{²$ÂâÜšŞ.³áúèg(l˜¨¤&Ö·ÖÂÚŞ¬9ìÔ¼è™4eZ/sqmO-¦pQi¿±à¬*óo8ßG÷GC»ÃNñtaµcüÏ^D¿ŸşxıÀo/Ö<ÆË£­G‡›A^Í§Â7‡1––D½Â¶•ä9ÿCy.¶$ê—çÏb;qÃ+Çlo³(6Ôµúäóïú‹='‹[Î-#gÿ¡§_‰Úl ³V8)íÎ¥q¼»¾Â#€Mé4®ÒÉVYÍéü/Lbf¬ÒÊø¼ñ)¥¬T|•=+Şğ5ûYcÎˆGZî]$íë¡A_C´€¯‰ÜÛLáÈÊ&?¾L7Ø^~éÑdSD9³Y©Vm,òDo ¼A«·âº’ÒåÈ #2’¨_1E‰9ÛqÛ?°¤(úè«¬…ÂA>ˆ¿LğZFÎúCO!K†[óprsntdñmô¤´¸–xÄñEu>œŞnC?˜¡r•Üb–Ü÷x«‰D5L×Ğ¦—vNvxiö“©İBD1qnn«&DK š4šÀ£ö‚¸‰AXRİX´òŒ<#®æn¤‹‰D1‚q0Pwùş ÁƒŠûG!Òû‰Œğ2à+&”ŸÈ}{®fì]şgqšFß¬É…[jŒd\^~ÈOØû–ÿQlĞ>¾yù–üÈûLĞºì°<OJş‡L‰¤ĞNˆLúÖiàÙŠmrG\à$²™Š´w¾SÁõ_x_¯™;eÕ”5³ûƒ‘s=¼Eí£ÒQ!‘J ¿Y^ÃeåéX~€b=³Û¬}O,Phòrª®ÍšÄÙ@×|ª‚9sğâd ô~uoIº»Ï!Æ”*Â¿Ù.‚EÛß“ÔÉÍ…±îX(‘Wxo=EèW& $	(ıœ2Êú{…¼D(„·XÒ[#ÛO‘ù;•üÈ-F$şeBÊşß/Ê5Ëıë$a‡ß,Á¢åo‡)üKãÍùãû+…QíUB@ü›ó´¦¹Ëé»Ã¹†¾mß²1mû•ï	xƒ;¹½‡ıÔ©¾Mëhß;ı óLÏ´Ñ^—d³ŸPÍ90´”#ßAclz™A}·U$ËŸı‚D¦4–J©q9ÈŸ7ş-e¡È5İLU³7‹¤S†&òÉÑïÃ™¨0v¬äıÈ‹ÓQã
+	j‹gØ;r`j,X¯ÁQ"LL,X¯Å‚õòJÄw)6èø!f=ÜœdËáËå
+	)¡×_Awåğ\É+X«c[
+#÷äµá0‰¼ğ­bNqÈ¡	¿\À…ûI&À×aŠ5M  ½¹ci(ÑW0ïo¡÷ôõ3™“'÷Ğáôøö÷Õ ¡†°õÅg##›q3‹-°ªŠ¸+
+¯§Àf \+—O8šC:e*a®öñà²®1Úû‡ó¬f«C? õá€Êa+îÈ{ıäHò±şYæça¡¼±ò(_/ÒºX3r²Ñ™©.‰Bh$I2gR$I•rK9~q!ÿk‹§Vš"5¡Ÿˆ¹²ıüd`‡úÂë4`Ïí¦+js>Ós!_4h*‹™{ç`ÄÜF@İyç}“‹ÈğƒUé»-=K¥R6»ã;ÆUèÕšb.·X£æ¿¥çe6íÖT]ˆ#Ä½¯‡c#aƒ´ôÇuq­ˆ¼MJÈ¯³>XÍx.˜~¡Ñá/éÉTéI2ñ/$rïÓ*ßÏa¡‹¿àçEá)Kƒr@nƒÅÇˆ“j´Y¨²LfæÚ¨uçc2pÁäwEG`tFiÆ/Ú‰~’?†Ê~”J´J¹¨İ#DÅa¤5‹İ–Î¿îŒnº&÷ÉÄQ•ï¼”|#VHúş\:µ9pC+Í;G¿p<I¤'bà¾™ô¥‹HxÂxkK­x¹="Z…Âæhòäº*úÜe8÷Äè_É„ˆ.§GŠß‰SËÁİÛ4Œ´ºËªBCÈ™û£ù}LY¯¨Jïœ4æÙ$´äBÔRßwÃéŠ:êâ¬’dUI}XLõö ÅÃ&ÏÒªär^¦ÃG}ÀÇÌ/ıB‹İ÷BvhÔë¨ìÈUÔ+[‚#Zb“İIÁ*…››wa{=dp/M¡o¡QŒg*<AÙ<0´†3e¸’N¯Â©æ-V©ŒR©ZŸ*I•!•úşQÂ·ùT*ÿÓ·>=.¿-A±°ã(zci½¹yşI(3Ù?×¹ÕáªaÀ#Œ·H§¿•‰šıyVuÔ\§úwÄe$P©~N‚ä»üè„`Êç}'ı"^LU™â$Œ tF-,bŒ¼U4óÙó÷–	ÿ?í}± ÕdN–²ÂÒQ”ÎöãÑÛÖ­Gf³gµÙ?›³—¢£'V'Fæ¨{õŞ§c2ØöÚ‚¢”Lî²Ÿk2l¨<•Â‰1İ9Ï<*ÑF¥ò3çá@óÔÆc0S‹‹ei%øyµïfŒÇ±õ‚õG#Æ#Œ§í€Ÿ•”'M•d¢*-§¸_K»áŸBSû„öÍù²N#\yaûk«¦+¤&…¡ñÇGÅ0¢'U–ufJŒlH|óºÄ­fÛl•ºÀ}„ó&twÚ8”ÆàQ³ä±´Ìt££m|úoUy~†æ‡N Úw*gË¥$Ã€ ÅFÏóÎ·ü@±{ÍkVmXÃ[Wmr¶VåF”ş­pG$Ş^öÅG:)†#±á~hI_IÃG‰f×¤d
+ğ(êGPŒ²F/ò.¶FÎó¾7³†AÔrÑ¢~¾õ‚l6®à£1>( Dk'Ş ~˜?=©R#[şw´ºÛDû3£•-Sø¼¿àoyã–99ÇHøşÁ«a­ ÔzİªäãßZî¹WÓ½‹Üñ±BcL?%Ò›. ÂIş!›şòöËVnîœ
+àÉûÃŞÇL'A7N+
+¿À@ğ^qba-Ä$aµGD§8Õ/OsŠ¿À2*p›õc`äTI-oeN†w‡ÀN}XKÀÊˆˆãZ&…¹PØ·ïq¿Í1	vB êbÔÓuóÃÂ‹¹40/æ[|Ôõu«&(šÿJò·ààŒgÌgà†ïÄã]0j‚Õ«y™×æ9Á£[á²²²<<\—Ó~®eCgÈ}d€OF_`ì¨öac/¸„kê5ÂôZP)× ÿú'ÆúEşcab¢ş¤’ÿ"ü@¦>¨z¶;Š² —Ú²£‰³€êiyÔV´hæUWy—
+$ˆi-YÕ·†,™ù…R+V"f¶–¬…µ!J¬!VÇB†ù‰Úk„€ÕY}Ö’`%	X•) ­D”ÕZXÍêY–ÄàPJù ²Qfka5ªW"ªÚZXŒòr:@ka5«ÇG†h-¬Æ¦l…ƒ éfš‡Ÿ©è%‘B_ÿCkŞúÛ„­có`½ø ÿï0vó¶´ØPƒE/dê-AllE½ô[:ˆ©Š8'ÌæIóƒnæqó„yÒ<e^îÌ&âgóœy.@Zü"ÌKìr6Á¥únqÌÓòÒ¬K6e£Mø¶üıº·é”/ã'ÚÈè¥úY•£¾sÂÿu¸uŞ¡uØú@Ô$˜1,Á’TÊE¸?Oşÿû?|úoj>6÷ „Å/ïåüÂÿ T¬ü‰+&Ç„æWŠiŞÊ¦–Â…ªß.úêÄwä“r¯‡ÂPùAÃbœ°’à>=ïìÌ•æf¿s8×şÂŠó³¨Aşæ<€¶€`3o¨§0j¥-éméR*š†®ÄŞœ3èùp€§kTôæ^¢^ryB=¨¿²):¸]õ6Ã;Üä	Eş8DE&Ã£Èzúj_=ğ|³%Åy¯¢ú/EP£%İm”İ~fdŠ\µØÕ6ß©=®Ú:ôn(M{6†l˜Ù0 i0 Ù¨5FÕF‚ƒ°
+öéul¬îÿsõÛıPŒ’<òÕeõğ‰5 r§ÿ´o,€S›E¡G±/u¯—¼ c S}qçJÜè½Nr¡§Zºı=i†¶…%èˆ¼yT*ì¯a€•¾»A›¶²m'Oê¥ÙÜ¡S¬å›ÙƒC1ÕÎñç$šñF€¼~ë†Æ’Õè> àêµªïğÿ&~ZvÂ«’r|À=ˆ^ ¬O$/âtµ“nìbx„+jgRjšE’ä«W¤S¯›R—,$ˆLJ{riŞZN:Ö¸Ê¥HTıŠ˜µ®ğ«\+G&§Át¡b"L×´1Í¬ß²›r®üí—‹ÑÅ½“uŒ‡Ç®À:AŒá×æUÈÒÀî(Ş+'ƒúÌ^r¹–û—ëu˜›Û<ñ£^“5RÿÆÕëQBéLQïj*OtÛt‰e¹¶H÷½T'–.€Jİ5b—=6`ƒ»pĞ¾k~Ï1Æ7šİié‘G/×ÕÔ¢Æ´éè~›ªHá]˜z7½æ€]¶9ä?]yHºä/ê{-8†(û=óØœæ Ì
+…ëæ·)ÉE†¦ãCfBFUmïx +±(çËuŒt¬ãhãD­Ç\ÇgaAë$(ÕWÏE:mÚ“N³½ÚÔªV£LFBJB %ãşš•©Äsôj×¡–®Iy$Û¦¥¨=ılQ°jXw…eÇÑí”ª4ª2ïJUN^uŠ.ÃÕéŠªÊ¨fn·ˆ€·Z§H)Hisœ¤kÒÓ2H’Œ¥"µ
+E˜¶[§Iµ.Ù¬	,~92å€y”!TÍ Û¡ÜßÑe³"q¶¸‘G½J¦ª*ŞµÊÈ  5råd¼Z$3ëŞUÄ³Š´HKº‘ø¥zÃP©x´HD5Ú¤7nÇãıd ‚6ĞG
+dr8J`Á°qpñğ	‰ˆ7ß­\,¥8ñ$J¢’LÏ ñ&Ä-ÛØ•CŠ\òßE¶;ï¬Ê”›§ÂE•Î¹àªK.»¢ÊM×\·Sµùv¹ã–Ûjüéw«S«~ö6Y¥Y«–Uö_šNºt»«GŸ^ı¦˜lµİ¾0ÍTÓÍğ—ƒşğ\ 9¢D# "‰AFA…FA­pì‚X#Ÿc¾·Ï~§œvÔ˜Í¶Ç!{ô­`RiD­X©%RıfK}nÀ—¾‚ò“¯„…JR²R”ª4¥+C™ğ"DŠ€ˆ$„Æ€@1[nE,X³áÏ‹b7Ûá8¸ğƒ×¼%”ï^2
+FÇ0DÃc]<|B"b’t¾vÏ}ßxà“’‘‹¥ '^‚DIT’¥H¥–FZÏÖ³C›Ôeûw6ÕJ$}@sS¥¨½³¥= £»¹¬ƒîÇ'k~¨µøgñ{Èy3*sh@]~ç¿Àríµ=:è9"¡Ï¢TÄÂNè‡ò;ñ©–…u´ıß	~€iû ¼……>~;•94 P—@à ®€p¨[ª­‘@„ u“~9èøÍ]÷ş¾èg&“IAíöÑ}øbyôhş¶ì†¬ğ§P“%rò5$2­–éÖK$Á{ˆÊ=-Sj•š2«Ì”[åñXÄãÖø¸ÆX4AYœ01à[IIĞ³h:OÒTV  
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://adventofcode.com/static/style.css?18
+
+@charset "utf-8";
+
+body { background: rgb(15, 15, 35); color: rgb(204, 204, 204); font-family: "Source Code Pro", monospace; font-size: 14pt; min-width: 60em; }
+
+img { border: 0px; }
+
+a { outline: 0px; }
+
+main, figure, figcaption { display: block; }
+
+pre, code { font-family: "Source Code Pro", monospace; }
+
+header, main { text-size-adjust: none; }
+
+a { text-decoration: none; color: rgb(0, 153, 0); }
+
+a:hover { color: rgb(153, 255, 153); }
+
+h1, h2 { font-size: 1em; font-weight: normal; }
+
+code { position: relative; display: inline-block; margin: 0px; padding: 0px; }
+
+code::before { z-index: -1; content: ""; position: absolute; display: block; left: -2px; right: -2px; top: 3px; bottom: 0px; border: 1px solid rgb(51, 51, 64); background: rgb(16, 16, 26); }
+
+pre.wrap { max-width: 100%; white-space: pre-wrap; }
+
+.quiet { opacity: 0.5; }
+
+p.wrap { width: 45em; }
+
+.hidden { border: 1px dotted gray; overflow: hidden; position: relative; padding: 0px 0.5em; }
+
+.hidden::before { content: "(hover to view)"; position: absolute; opacity: 0.5; text-align: center; left: 0px; top: 0px; width: 100%; }
+
+.hidden > * { visibility: hidden; }
+
+.hidden:hover { border-color: transparent; }
+
+.hidden:hover::before { display: none; }
+
+.hidden:hover > * { visibility: visible; }
+
+.warning:not(.warning-active) { transition: color 1s ease 0s, opacity 1s ease 0s; }
+
+.warning-active { color: rgb(255, 0, 0); opacity: 1; }
+
+.supporter-badge { color: rgb(255, 255, 102); }
+
+a.supporter-badge:hover { text-decoration: none; color: rgb(255, 255, 204); text-shadow: rgb(255, 255, 102) 0px 0px 5px; }
+
+.sponsor-badge { color: rgb(121, 162, 216); }
+
+a.sponsor-badge:hover { text-decoration: none; color: rgb(204, 219, 237); text-shadow: rgb(121, 162, 216) 0px 0px 5px; }
+
+#sidebar { width: 200px; float: right; margin: 0px 15px 2em 2em; }
+
+#sponsor { margin-bottom: 2.5em; }
+
+header { white-space: nowrap; cursor: default; z-index: 100; margin-bottom: 2em; }
+
+header h1 { display: inline-block; margin: 0px; padding-right: 1em; }
+
+header h1 a, header h1 span { display: inline-block; text-decoration: none; color: rgb(0, 204, 0); text-shadow: rgb(0, 204, 0) 0px 0px 2px, rgb(0, 204, 0) 0px 0px 5px; }
+
+header h1 a:hover { color: rgb(153, 255, 153); text-shadow: rgb(153, 255, 153) 0px 0px 2px, rgb(153, 255, 153) 0px 0px 5px; }
+
+header h1.title-event .title-event-wrap { opacity: 0.33; white-space: pre; }
+
+header .user { display: inline-block; padding-left: 1em; }
+
+header .user .star-count { color: rgb(255, 255, 102); }
+
+header nav { display: inline-block; }
+
+header nav ul { list-style-type: none; padding: 0px; margin: 0px; display: inline-block; }
+
+header nav li { display: inline-block; padding: 0px 0.6em; }
+
+header nav a { display: inline-block; text-decoration: none; outline: none; }
+
+input[type="text"], textarea { color: inherit; border: 1px solid rgb(102, 102, 102); background: rgb(16, 16, 26); padding: 0px 2px; font-family: inherit; font-size: inherit; margin: 0px; }
+
+textarea { vertical-align: top; }
+
+label img { vertical-align: bottom; position: relative; top: -3px; margin-right: 0.3em; }
+
+input[type="radio"] { display: none; }
+
+input[type="radio"] ~ span { cursor: pointer; display: inline-block; }
+
+input[type="radio"] ~ span::before { content: "( ) "; }
+
+input[type="radio"] ~ span:hover { background-color: rgb(25, 25, 59); }
+
+input[type="radio"]:checked ~ span { color: rgb(255, 255, 255); }
+
+input[type="radio"]:checked ~ span::before { content: "(O) "; }
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] ~ span { cursor: pointer; display: inline-block; }
+
+input[type="checkbox"] ~ span::before { content: "[ ] "; }
+
+input[type="checkbox"] ~ span:hover { background-color: rgb(25, 25, 59); }
+
+input[type="checkbox"]:checked ~ span { color: rgb(255, 255, 255); }
+
+input[type="checkbox"]:checked ~ span::before { content: "[X] "; }
+
+input[type="checkbox"]:disabled ~ span { opacity: 0.3; cursor: default; }
+
+input[type="checkbox"]:disabled ~ span::before { content: "[-] "; }
+
+input[type="checkbox"]:disabled ~ span:hover { background-color: transparent; }
+
+input[type="submit"] { background: transparent; border: 0px; font-family: inherit; font-size: inherit; margin: 0px; padding: 0px; color: rgb(0, 153, 0); cursor: pointer; }
+
+input[type="submit"]:hover { color: rgb(153, 255, 153); }
+
+article { width: 45em; margin-bottom: 2em; margin-top: 2em; }
+
+article:first-child { margin-top: 0px; }
+
+article h2 { color: rgb(255, 255, 255); margin-top: 1em; margin-bottom: 1em; white-space: nowrap; }
+
+article h2 + * { margin-top: 0px; }
+
+article em { color: rgb(255, 255, 255); font-style: normal; text-shadow: rgb(255, 255, 255) 0px 0px 5px; }
+
+article em.star { color: rgb(255, 255, 102); font-style: normal; text-shadow: rgb(255, 255, 102) 0px 0px 5px; }
+
+article a { white-space: nowrap; }
+
+article .aside { opacity: 0.6; }
+
+article ul { list-style-type: none; padding: 0px; }
+
+article li { padding-left: 2.5em; position: relative; }
+
+article li::before { content: "Â Â -Â "; position: absolute; left: 0px; top: 0px; }
+
+.day-success { color: rgb(255, 255, 102); text-shadow: rgb(255, 255, 102) 0px 0px 5px; }
+
+form#settings input[type="radio"] ~ span { min-width: 30em; }
+
+form#settings input[type="checkbox"] ~ span { min-width: 30em; }
+
+.share { color: rgb(0, 153, 0); cursor: default; transition: color 0.2s ease 1s; }
+
+.share:hover { color: rgb(170, 255, 170); transition: color 0.2s ease 0s; }
+
+.share .share-content { display: inline-block; vertical-align: text-bottom; white-space: nowrap; overflow: hidden; max-width: 0px; transition: max-width 0.2s ease 1s; }
+
+.share .share-content::before { content: "Â "; }
+
+.share .share-content::after { }
+
+.share:hover .share-content { max-width: 45em; transition: max-width 0.2s ease 0s; }
+
+.puzzle-input { border: 1px solid rgb(153, 153, 153); background: rgb(51, 51, 51); color: rgb(255, 255, 255); text-shadow: rgb(255, 255, 255) 0px 0px 5px; }
+
+.calendar { cursor: default; user-select: none; }
+
+.calendar > span { color: rgb(51, 51, 51); }
+
+.calendar > a { text-decoration: none; color: rgb(102, 102, 102); outline: none; cursor: default; }
+
+.calendar a:hover { background-color: rgba(119, 119, 165, 0.2); cursor: pointer; }
+
+#calendar-countdown { padding-left: 0.5em; }
+
+.calendar .calendar-day { color: rgb(102, 102, 102); }
+
+.calendar a .calendar-day { color: rgb(204, 204, 204); }
+
+.calendar a .calendar-mark-complete, .calendar a .calendar-mark-verycomplete { visibility: hidden; }
+
+.calendar a.calendar-complete .calendar-mark-complete, .calendar a.calendar-verycomplete .calendar-mark-complete { visibility: visible; color: rgb(255, 255, 102); }
+
+.calendar a.calendar-verycomplete .calendar-mark-verycomplete { visibility: visible; color: rgb(255, 255, 102); }
+
+.calendar .calendar-day-new { animation: anim-day-new 5s ease 0s 1 normal none running; }
+
+.calendar .calendar-day-new .calendar-day { animation: anim-day-new-day 5s ease 0s 1 normal none running; }
+
+@keyframes anim-day-new { 
+  0% { color: rgb(51, 51, 51); text-shadow: transparent 0px 0px 5px; }
+  25% { color: rgb(255, 255, 255); text-shadow: rgb(255, 255, 255) 0px 0px 5px; }
+  100% { color: rgb(102, 102, 102); text-shadow: transparent 0px 0px 5px; }
+}
+
+@keyframes anim-day-new-day { 
+  0% { color: rgb(102, 102, 102); text-shadow: transparent 0px 0px 5px; }
+  25% { color: rgb(255, 255, 255); text-shadow: rgb(255, 255, 255) 0px 0px 5px; }
+  100% { color: rgb(204, 204, 204); text-shadow: transparent 0px 0px 5px; }
+}
+
+.stats > span, .stats > span .stats-firstonly, .stats > span .stats-both { color: rgb(102, 102, 102); }
+
+.stats > a { color: rgb(204, 204, 204); min-width: 35em; display: inline-block; }
+
+.stats > a:hover { background-color: rgb(30, 30, 70); }
+
+.stats-firstonly { color: rgb(102, 102, 153); }
+
+.stats-both { color: rgb(255, 255, 102); }
+
+.leaderboard-daylinks { cursor: default; }
+
+.leaderboard-daylinks-selected { color: rgb(255, 255, 255); text-shadow: rgb(255, 255, 255) 0px 0px 5px; }
+
+.leaderboard-daydesc-first { color: rgb(102, 102, 153); }
+
+.leaderboard-daydesc-both { color: rgb(255, 255, 102); }
+
+.leaderboard-entry { white-space: pre; }
+
+.leaderboard-entry .leaderboard-totalscore { color: rgb(255, 255, 255); }
+
+.leaderboard-anon { opacity: 0.6; }
+
+.leaderboard-userphoto { display: inline-block; height: 20px; width: 20px; margin: 0px 0.5em; text-align: center; }
+
+.leaderboard-userphoto img { height: 20px; max-width: 20px; vertical-align: middle; position: relative; top: -2px; }
+
+.leaderboard-time { opacity: 0.5; }
+
+.privboard-row { white-space: pre; }
+
+.privboard-row .star-count { color: rgb(255, 255, 102); }
+
+.privboard-name { vertical-align: text-bottom; }
+
+.privboard-days > span { display: inline-block; color: rgb(51, 51, 51); }
+
+.privboard-days > a { display: inline-block; }
+
+.privboard-star-locked { visibility: hidden; }
+
+.privboard-star-unlocked { color: rgb(51, 51, 51); }
+
+.privboard-star-firstonly { color: rgb(102, 102, 153); }
+
+.privboard-star-both { color: rgb(255, 255, 102); }
+
+.privboard-delbtn { opacity: 0.33; }
+
+.privboard-row:hover .privboard-delbtn { opacity: 1; }
+
+.sponsors { width: 46em; }
+
+.sponsor { margin: 1em 0px; }
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W----
+Content-Type: text/css
+Content-Transfer-Encoding: binary
+Content-Location: https://adventofcode.com/static/highcontrast.css?0
+
+@charset "utf-8";
+
+* { background: white !important; color: black !important; text-shadow: none !important; }
+
+a { color: rgb(0, 0, 255) !important; text-decoration: underline !important; }
+
+em { font-weight: 900 !important; }
+------MultipartBoundary--LrMBpUKcUuRceatsiagdv4lJxEsoCJcyyqHyi6Gh7W------

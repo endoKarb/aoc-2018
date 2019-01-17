@@ -1,0 +1,1 @@
+The resource value at minute 100000 is 191295
